@@ -14,3 +14,23 @@
 .animes-list img {
   max-width: 100%;
 }
+
+.pagination {
+  display: flex;
+  list-style: none;
+}
+
+/*Uma LI que tiver é sempre uma anterior para não usar first Child*/
+.pagination li+li {
+  margin-left: 1rem;
+}
+
+.pagination__item--active {
+  background: none;
+  font-weight: bold;
+  border: none;
+}
+
+.pagination__item--active:focus {
+  outline: none;
+}
